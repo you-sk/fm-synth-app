@@ -2,6 +2,10 @@
 
 ブラウザ上で動作する、4オペレーター構成のFMシンセサイザーです。Web Audio APIを使用して音を生成し、ReactとTailwind CSSでUIを構築しています。
 
+![image](https://github.com/user-attachments/assets/491337df-bae3-4199-ae0c-5c63c6d66f22)
+
+https://you-sk.github.io/fm-synth-app/
+
 -----
 
 ## ✨ 主な機能
