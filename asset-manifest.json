@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fm-synth-app/static/css/main.3d86832c.css",
+    "main.js": "/fm-synth-app/static/js/main.7ad72eff.js",
+    "static/js/453.2cda8f43.chunk.js": "/fm-synth-app/static/js/453.2cda8f43.chunk.js",
+    "index.html": "/fm-synth-app/index.html",
+    "main.3d86832c.css.map": "/fm-synth-app/static/css/main.3d86832c.css.map",
+    "main.7ad72eff.js.map": "/fm-synth-app/static/js/main.7ad72eff.js.map",
+    "453.2cda8f43.chunk.js.map": "/fm-synth-app/static/js/453.2cda8f43.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d86832c.css",
+    "static/js/main.7ad72eff.js"
+  ]
+}
