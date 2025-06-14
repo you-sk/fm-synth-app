@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# 4オペレーター FMシンセサイザー (4-Operator FM Synthesizer)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ブラウザ上で動作する、4オペレーター構成のFMシンセサイザーです。Web Audio APIを使用して音を生成し、ReactとTailwind CSSでUIを構築しています。
 
-## Available Scripts
+-----
 
-In the project directory, you can run:
+## ✨ 主な機能
 
-### `npm start`
+* **4オペレーターFM音源**: 4つのオペレーター（サイン波、矩形波、ノコギリ波、三角波）を組み合わせて音作りができます。
+* **多彩なパラメーター**: 各オペレーターの周波数比、デチューン、ADSRエンベロープ、レベルなどを調整可能です。
+* **6種類のアルゴリズム**: オペレーターの接続順（アルゴリズム）を選択し、多彩なサウンドを生み出せます。
+* **仮想キーボード**: マウス操作、またはPCのキーボード（A, W, S, E, D...）で演奏できます。
+* **オクターブ変更**: キーボードの音域を上下に変更できます。
+* **パッチの保存と読込**: 作成した音色設定（パッチ）をJSONファイルとしてエクスポート・インポートできます。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-----
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 💻 使用技術
 
-### `npm test`
+* **React**: UIの構築
+* **Web Audio API**: 音声処理とシンセサイザーエンジンの実装
+* **Tailwind CSS**: スタイリング
+* **Lucide React**: アイコン
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-----
 
-### `npm run build`
+## 🚀 ローカルでの動かし方
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.  **リポジトリをクローン**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    git clone https://github.com/<あなたのユーザー名>/<リポジトリ名>.git
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2.  **プロジェクトフォルダに移動**:
 
-### `npm run eject`
+    ```bash
+    cd <リポジトリ名>
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3.  **依存パッケージをインストール**:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4.  **開発サーバーを起動**:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    npm start
+    ```
 
-## Learn More
+ブラウザで `http://localhost:3000` を開くと、シンセサイザーが表示されます。
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-----
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 使い方
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **音作り**: 右側のオペレーターパネルで各パラメーターを調整します。ON/OFFでオペレーターの有効/無効を切り替えられます。
+* **アルゴリズム選択**: 左側のグローバル設定で、オペレーターの組み合わせを変更します。
+* **演奏**: 画面下部のキーボードをクリックするか、PCのキーボードで演奏します。
+* **保存**: 気に入った音色が完成したら「エクスポート」ボタンで設定を保存できます。
+* **読込**: 保存した設定は「インポート」ボタンでいつでも読み込めます。
